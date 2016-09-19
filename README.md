@@ -1,4 +1,7 @@
 # slackSMS 💬
+
+[![Build Status](https://travis-ci.org/ammaristotle/slackSMS.svg?branch=master)](https://travis-ci.org/ammaristotle/slackSMS) [![dependencies Status](https://david-dm.org/ammaristotle/slackSMS/status.svg)](https://david-dm.org/ammaristotle/slackSMS)
+[![devDependencies Status](https://david-dm.org/ammaristotle/slackSMS/dev-status.svg)](https://david-dm.org/ammaristotle/slackSMS?type=dev) [![Coverage Status](https://coveralls.io/repos/github/ammaristotle/slackSMS/badge.svg?branch=master)](https://coveralls.io/github/ammaristotle/slackSMS?branch=master)
 ### A client to interface between Twilio and Slack
 Receive messages at your Twilio number in Slack and reply to them from Slack. Built with Node.js
 
@@ -12,8 +15,7 @@ Text messaging has considerably higher yield than email. It is direct and a fast
 $ git clone https://github.com/ammaristotle/slackSMS
 $ npm install
 ```
-  * Complete steps 1-4 below and copy the configuration variables to a `.env` file (using `.env.example` as a guide). Then:
-  ```bash
+  * Complete steps 1-4 below and copy the configuration variables to a `.env` file (using `.env.example` as a guide). Then: ```bash
   $ npm start # runs the server on port 4000
   ```
   * (Optional) Learn how to customize the way [messages appear in Slack](https://api.slack.com/docs/message-attachments)
