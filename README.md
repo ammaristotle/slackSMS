@@ -14,8 +14,10 @@ Text messaging has considerably higher yield than email. It is direct and a fast
 ```bash
 $ git clone https://github.com/ammaristotle/slackSMS
 $ npm install
-```
-  * Complete steps 1-4 below and copy the configuration variables to a `.env` file (using `.env.example` as a guide). Then: ```bash
+
+* Complete steps 1-4 below and copy the configuration variables to a `.env` file (using `.env.example` as a guide). Then:
+
+  ```bash
   $ npm start # runs the server on port 4000
   ```
   * (Optional) Learn how to customize the way [messages appear in Slack](https://api.slack.com/docs/message-attachments)
