@@ -28,13 +28,13 @@ function validChannel(channelToCheck) {
     activeChannels.forEach(function add(channel) {
       this.channels.push(channel.name);
     });
-    /* eslint no-unneeded-ternary: "off" */
     return channelExists(channelToCheck, this.channels) ? true : false;
   });
 }
 
 module.exports = {
   sendToSlack: (req, res) => {
+    console.log(req.body);
     let usersNumber = req.body.From;
     // chop off pre-pended + in the number
     usersNumber = usersNumber.slice(1);
