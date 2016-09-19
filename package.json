@@ -1,0 +1,38 @@
+{
+  "name": "slackSMS",
+  "version": "0.0.1",
+  "author": "ammar",
+  "description": "SMS backend for Twilio via Slack",
+  "license": "MIT",
+  "main": "src/app.js",
+  "repository": "https://github.com/ammaristotle/slackSMS",
+  "bugs": {
+    "url": "https://github.com/ammaristotle/slackSMS/issues"
+  },
+  "devDependencies": {
+    "add-stream": "^1.0.0",
+    "chai": "^3.5.0",
+    "eslint": "^3.5.0",
+    "eslint-config-airbnb": "^11.1.0",
+    "eslint-plugin-import": "^1.15.0",
+    "eslint-plugin-mocha": "^4.5.1",
+    "mocha": "^3.0.2",
+    "request": "^2.71.0"
+  },
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "dependencies": {
+    "async": "^1.5.2",
+    "body-parser": "^1.0.2",
+    "dotenv": "^2.0.0",
+    "error-handler": "^0.1.4",
+    "express": "~4.1.1",
+    "mdi": "^1.4.57",
+    "method-override": "^1.0.0",
+    "slack-node": "^0.2.0",
+    "twilio": "^2.9.0",
+    "xml": "^1.0.1"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "SlackSMS",
+  "description": "A library to interface between Slack and Twilio",
+  "repository": "",
+  "logo": "",
+  "keywords": [],
+  "env": {
+    "SLACK_BOT_NAME": {
+      "description": "Name of the bot as it should appear in Slack",
+      "required": true
+    },
+    "SLACK_WEBHOOK_URI": {
+      "description": "A webhook URI to send http POST requests",
+      "required": true
+    },
+    "SLACK_API_TOKEN": {
+      "description": "Issued by Slack to authenticate requests",
+      "required": true
+    },
+    "TWILIO_ACCOUNT_SID": {
+      "description": "Used by Twilio to identify apps as a username",
+      "required": true
+    },
+    "TWILIO_AUTH_TOKEN": {
+      "description": "Issued by Twilio to authenticate requests",
+      "required": true
+    },
+    "TWILIO_NUMBER": {
+      "description": "Your Twilio number configured for SMS",
+      "required": true
+    }
+  },
+  "image": "heroku/nodejs",
+}

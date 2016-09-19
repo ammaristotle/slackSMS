@@ -1,0 +1,14 @@
+{
+  "extends": "airbnb",
+    "plugins": [
+    "mocha"
+  ],
+  "env": {
+    "browser": true,
+    "node": true
+    },
+  "rules": {
+    "func-names": 0,
+    "object-shorthand": 1
+    }
+}
