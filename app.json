@@ -2,7 +2,6 @@
 	"name": "SlackSMS",
 	"description": "A library to interface between Slack and Twilio",
 	"repository": "https://github.com/ammaristotle/slackSMS",
-	"logo": "",
 	"keywords": ["twilio", "slack"],
 	"env": {
 		"SLACK_BOT_NAME": {
