@@ -1,6 +1,6 @@
 # slackSMS 💬
 
-[![Build Status](https://travis-ci.org/ammaristotle/slackSMS.svg?branch=master)](https://travis-ci.org/ammaristotle/slackSMS) [![dependencies Status](https://david-dm.org/ammaristotle/slackSMS/status.svg)](https://david-dm.org/ammaristotle/slackSMS)
+[![dependencies Status](https://david-dm.org/ammaristotle/slackSMS/status.svg)](https://david-dm.org/ammaristotle/slackSMS)
 [![devDependencies Status](https://david-dm.org/ammaristotle/slackSMS/dev-status.svg)](https://david-dm.org/ammaristotle/slackSMS?type=dev) [![Coverage Status](https://coveralls.io/repos/github/ammaristotle/slackSMS/badge.svg?branch=master)](https://coveralls.io/github/ammaristotle/slackSMS?branch=master)
 ### A client to interface between Twilio and Slack
 Receive messages at your Twilio number in Slack and reply to them from Slack. Built with Node.js
