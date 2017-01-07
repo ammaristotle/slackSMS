@@ -28,13 +28,13 @@ function validChannel(channelToCheck) {
     activeChannels.forEach(function add(channel) {
       this.channels.push(channel.name);
     });
+    /* eslint no-unneeded-ternary: 0 */
     return channelExists(channelToCheck, this.channels) ? true : false;
   });
 }
 
 module.exports = {
   sendToSlack: (req, res) => {
-    console.log(req.body);
     let usersNumber = req.body.From;
     // chop off pre-pended + in the number
     usersNumber = usersNumber.slice(1);
@@ -45,7 +45,7 @@ module.exports = {
         {
           channel: `#sms${usersNumber}`,
           icon_emoji: ':speech_balloon:',
-          username: 'muzliving messenger',
+          username: process.env.SLACK_BOT_NAME,
           attachments: [
             {
               fallback: `from ${req.body.From}: ${req.body.Body}`,
@@ -56,7 +56,7 @@ module.exports = {
               footer_icon: 'https://www.twilio.com/marketing/bundles/marketing/img/favicons/favicon.ico',
             },
           ],
-        }, function (slackError, slackResponse) { }
+        }, () => { }
       );
     } else {
       // creates a new channel for new incoming numbers
@@ -79,7 +79,7 @@ module.exports = {
                   footer_icon: 'https://www.twilio.com/marketing/bundles/marketing/img/favicons/favicon.ico',
                 },
               ],
-            }, function (slackError, slackResponse) { }
+            }, () => { }
           );
         }
       });

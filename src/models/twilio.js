@@ -20,7 +20,7 @@ module.exports = {
       from: process.env.TWILIO_NUMBER,
       body: messageToSend,
     },
-      function (error, message) {
+      (error) => {
         if (error) {
           res.send('Error: unable to send message');
         }
@@ -35,8 +35,7 @@ module.exports = {
         icon_emoji: ':boom:',
         text: req.body.text,
       },
-      /* eslint prefer-arrow-callback: "off" */
-      function (slackError, slackResponse) { }
+      () => { }
     );
     res.status(200).send('Message sent successfully.');
     res.end();
