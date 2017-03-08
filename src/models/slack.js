@@ -53,7 +53,7 @@ module.exports = {
               author_name: `Message from ${req.body.From}`,
               title: req.body.Body,
               footer: 'powered by Twilio',
-              footer_icon: 'https://www.twilio.com/marketing/bundles/marketing/img/favicons/favicon.ico',
+              footer_icon: 'https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAANCAAAAJGU3Yzg3ODY3LTRlMGEtNGRjNy1iMjIzLWRiZDBjZjU4NjgyYQ.png',
             },
           ],
         }, () => { }
@@ -76,7 +76,7 @@ module.exports = {
                   author_name: `Message from ${req.body.From}`,
                   title: req.body.Body,
                   footer: 'powered by Twilio',
-                  footer_icon: 'https://www.twilio.com/marketing/bundles/marketing/img/favicons/favicon.ico',
+                  footer_icon: 'https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAANCAAAAJGU3Yzg3ODY3LTRlMGEtNGRjNy1iMjIzLWRiZDBjZjU4NjgyYQ.png',
                 },
               ],
             }, () => { }

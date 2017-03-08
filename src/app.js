@@ -11,6 +11,7 @@ app.set('port', process.env.PORT || 4000);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use('/api', router);
+app.get('/', (req, res) => { res.send('Online!'); });
 
 http.createServer(app).listen(app.get('port'), () => {
   /* eslint-disable no-console */
