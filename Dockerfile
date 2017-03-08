@@ -1,22 +1,15 @@
-FROM phusion/passenger-nodejs:0.9.19
+FROM node:6.9.2-alpine
 
 MAINTAINER <ammaristotle@users.noreply.github.com>
-RUN apt-get update
 
-ENV APP_HOME /home/app/slacksms
-WORKDIR $APP_HOME
+ARG APP_DIR=/opt/app
+WORKDIR $APP_DIR
 
-ADD package.json $APP_HOME/
-RUN npm install
+ADD package.json $APP_DIR/
+RUN npm install --production
 
-ADD . $APP_HOME/
+ADD . $APP_DIR/
 
-RUN chown -R app:app $APP_HOME
-
-RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
-ENV PASSENGER_APP_ENV production
-
-CMD ["npm", "start"]
+CMD node src/app.js
 
 EXPOSE 80

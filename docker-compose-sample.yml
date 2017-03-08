@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  slackSMS:
+    image: ammaristotle/slacksms
+    environment:
+      SLACK_BOT_NAME: Twilio Bot
+      SLACK_WEBHOOK_URI: https://hooks.slack.com/services/some_random_hash
+      SLACK_API_TOKEN: abcd-0000000000-1111111111-22222222222-3333e4ff56
+      TWILIO_ACCOUNT_SID: AAa0e0aa00a00a0a00a0a000a00aaa0aa0
+      TWILIO_AUTH_TOKEN: 123456ab78cd9e0123f4ghi5j6k78l9m
+      TWILIO_NUMBER: 5555555555
+    ports: ["4000:80"]
